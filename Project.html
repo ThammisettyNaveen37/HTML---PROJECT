@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body style="background-color:pink">
+
+      <div><header>
+        <h1>Travel Booking Website</h1>
+		</header></div>
+       <div><h2>Find Your Next Adventure</h2>
+        <form class="search-form">
+            <label for="destination">Destination from:</label>
+			<input type="text" id="destination" placeholder="Enter city">
+			 <label for="destination">Destination to:</label>
+            <input type="text" id="destination" placeholder="Enter city">
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date">
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date"><br>
+            <button type="submit">Search</button>
+        </form></div>
+        <h3>Filters</h3>
+        <form class="filter-form">
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="1000">
+            <span id="price-value"></span>
+
+            <label for="Bus-type">Bus-type:</label>
+            <select id="Bus-type">
+                <option value="A/C sleeper">A/C sleeper</option>
+                <option value="Non A/C sleeper">non A/C sleeper</option>
+                <option value="first-class">A/c seater</option>
+				<option value="first-class">non A/c seater</option>
+            </select>
+        </form>
+    </div>
+   <center> <div class="results">
+        <h3 style="color:#c10061">Available Buses</h3>
+        <div class="Bus-list">
+            <div style="color:#0033cc"class="Bus-list">
+                <h4>Vkaveri travels</h4>
+                <p>Price: $400</p>
+                <button style="color:#cc0099">Book Now</button>
+            </div>
+            <div  style="color:#ff6633"class="Bus-list">
+                <h4>orange travels</h4>
+                <p>Price: $550</p>
+                <button style="color:#3333ff">Book Now</button>
+            </div>
+            <div  style="color:#339966"class="Bus-list">
+                <h4>Kkaveri travels</h4>
+                <p>Price: $300</p>
+                <button style="color:#993366">Book Now</button>
+            </div>
+        </div></center>
+    </div>
+	<center><div class="boarding point">
+
+	<h3 style="color:#cc0000">Select Boarding and Dropping points</h3>
+	
+	<div class="boarding point">
+	<label for="boarding points">boarding points:</label>
+            <select id="boarding points">
+                <option value="Ameerpet">Ameerpet</option>
+                <option value="SR Nagar">SR Nagar</option>
+                <option value="Kukatpally">Kukatpally</option>
+				<option value="ESI">ESI</option>
+            </select>
+			<div class="droping point">
+	<label for="droping point">droping point:</label>
+            <select id="droping points">
+                <option value="Ongole">Ongole</option>
+                <option value="Kavali">Kavali</option>
+                <option value="Nellore">Nellore</option>
+				<option value="Gudur">Gudur</option>
+            </select>
+        <h3 style="color:#0099cc">Complete Your Booking</h3>
+        <form id="booking-form">
+            <label for="full-name" style="color:#ff3333">Full Name: &nbsp&nbsp &nbsp&nbsp</label>
+           <input  type="text" id="full-name" placeholder="Enter your full name" required ><br>
+           <br>
+            <label for="email" style="color:#ff3333">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="passport-number" style="color:#ff3333">Phone Number:</label>
+            <input type="text" id="phone-number" placeholder="phone number" required><br><br>
+            <button type="submit" style="color:green">Confirm Booking</button>
+        </form>
+		</div>
+</body>
+</html>
